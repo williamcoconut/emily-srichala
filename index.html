@@ -55,6 +55,7 @@
   /* hero visual */
   .hero-visual{position:relative}
   .portrait{aspect-ratio:4/5;border-radius:28px;background:linear-gradient(150deg,var(--coral) 0%,var(--peach) 100%);position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(212,82,95,.28)}
+  .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .portrait .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,.9);gap:8px;text-align:center;padding:20px}
   .portrait .ph .ico{font-size:2rem}
   .portrait .ph .cap{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;opacity:.85}
@@ -90,6 +91,7 @@
   .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
   .badge{font-size:.76rem;font-weight:600;background:var(--coral-soft);color:var(--coral-deep);padding:7px 14px;border-radius:50px}
   .about-visual{aspect-ratio:1/1;border-radius:24px;background:linear-gradient(150deg,#ffd9dd,#ffb88a);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .about-visual img{width:100%;height:100%;object-fit:cover}
   .about-visual .ph{color:rgba(20,17,20,.5);text-align:center;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
 
   /* pillars */
@@ -102,13 +104,9 @@
 
   /* content strip (placeholder tiles) */
   .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-  .tile{aspect-ratio:3/4;border-radius:16px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:14px}
-  .tile .lbl{position:relative;z-index:2;color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.03em}
-  .tile.t1{background:linear-gradient(160deg,#e8707a,#d4525f)}
-  .tile.t2{background:linear-gradient(160deg,#ffb88a,#e8707a)}
-  .tile.t3{background:linear-gradient(160deg,#141114,#4a3f43)}
-  .tile.t4{background:linear-gradient(160deg,#ffd9dd,#e8707a)}
-  .strip-note{text-align:center;font-size:.82rem;color:var(--gray);margin-top:18px}
+  .tile{aspect-ratio:16/9;border-radius:14px;overflow:hidden;display:block;position:relative;box-shadow:0 8px 22px rgba(20,17,20,.08);transition:transform .3s,box-shadow .3s}
+  .tile:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(212,82,95,.16)}
+  .tile img{width:100%;height:100%;object-fit:cover;display:block}
 
   /* rates */
   .rates-wrap{background:var(--light);border-radius:32px;padding:56px 40px}
@@ -187,7 +185,7 @@
     </div>
     <div class="hero-visual">
       <div class="portrait">
-        <div class="ph"><span class="ico">📸</span><span class="cap">Emily's hero photo</span></div>
+        <img src="images/hero.jpg" alt="Emily Srichala in a traditional Thai dress at Wat Arun, Bangkok">
       </div>
       <div class="float-chip fc1"><span class="big">2.5M+</span><span class="sm">Combined reach</span></div>
       <div class="float-chip fc2"><span class="big">30.9M</span><span class="sm">TikTok likes</span></div>
@@ -221,10 +219,10 @@
         <span class="badge">Culture &amp; travel</span>
         <span class="badge">ฝรั่งพูดไทย</span>
         <span class="badge">Bangkok lifestyle</span>
-        <span class="badge">TikTok Awards TH '25 nominee*</span>
+        <span class="badge">TikTok Awards TH '25 nominee</span>
       </div>
     </div>
-    <div class="about-visual"><div class="ph">Lifestyle / on-location photo</div></div>
+    <div class="about-visual"><img src="images/about.jpg" alt="Emily Srichala with her husband on location in Thailand"></div>
   </div>
 </section>
 
@@ -248,12 +246,11 @@
 <section class="pad" style="padding-top:0">
   <div class="wrap">
     <div class="strip">
-      <div class="tile t1"><span class="lbl">Street food reel</span></div>
-      <div class="tile t2"><span class="lbl">Province vlog</span></div>
-      <div class="tile t3"><span class="lbl">Culture explainer</span></div>
-      <div class="tile t4"><span class="lbl">Brand collab</span></div>
+      <a class="tile" href="https://www.youtube.com/@Emilysrichala." target="_blank" rel="noopener"><img src="images/content1.jpg" alt="Emily Srichala Thai street food video"></a>
+      <a class="tile" href="https://www.youtube.com/@Emilysrichala." target="_blank" rel="noopener"><img src="images/content2.jpg" alt="Emily Srichala Bangkok Chinatown food video"></a>
+      <a class="tile" href="https://www.youtube.com/@Emilysrichala." target="_blank" rel="noopener"><img src="images/content3.jpg" alt="Emily Srichala Thai culture and travel video"></a>
+      <a class="tile" href="https://www.youtube.com/@Emilysrichala." target="_blank" rel="noopener"><img src="images/content4.jpg" alt="Emily Srichala northern Thai food video"></a>
     </div>
-    <div class="strip-note">↑ Placeholder tiles — swap in Emily's best-performing videos/photos.</div>
   </div>
 </section>
 
@@ -266,7 +263,7 @@
           <div class="sec-tag">Partnerships</div>
           <h2>Rates &amp; <em>packages</em></h2>
         </div>
-        <div class="rates-note">All rates in USD · indicative starting points</div>
+        <div class="rates-note">All rates in USD</div>
       </div>
 
       <div class="rates-main">
