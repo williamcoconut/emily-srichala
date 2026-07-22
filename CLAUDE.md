@@ -22,14 +22,19 @@ Jess's site (jesszheng.co): Fraunces + DM Sans, coral #e8707a on cream.
 - Thai name: เอมิลี่ ศรีชะลา. Awards/TV (TikTok Awards TH '25 nominee, The
   Social Warrior S2) are secondary-source only — marked with * on the page.
 
-## PLACEHOLDER — confirm with William/Emily before it goes anywhere real
-- **Rates** are indicative, scaled to her ~1M+ tier (NOT confirmed by Emily):
-  TikTok $4,000 · IG Reel $3,500 · FB $2,000 · YT $5,500 · Bundle $8,000
-  (save $1,500) · IG Story set $800 · UGC/Whitelisting $2,500 · Spark code $1,500.
-- **Photos** are CSS gradient tiles (hero, about, 4-tile strip). Swap in Emily's
-  real photos/videos — do NOT scrape her content without her OK.
+## DRAFT status — William's call: rough draft to show Emily, then finalize
+- **Rates** are plausible-for-her-size DRAFT numbers (William approved using
+  these until she confirms): TikTok $4,000 · IG Reel $3,500 · FB $2,000 · YT
+  $5,500 · Bundle $8,000 (save $1,500) · IG Story set $800 · UGC/Whitelisting
+  $2,500 · Spark code $1,500. Swap for her real rates after she sees it.
+- **Photos** are her REAL public images pulled online for the draft (William
+  OK'd this): hero = Thai-dress at Wat Arun (her YT avatar shoot); about =
+  on-location couple shot (Thailights press photo); content strip = 4 of her
+  actual YouTube video thumbnails (img.youtube.com/vi/<id>). For the final,
+  get her own higher-res/hand-picked shots. Files in images/ (hero.jpg,
+  about.jpg, content1-4.jpg).
 - Possible add: EN/TH language toggle (very on-brand — she's the "speaks Thai"
-  creator). Left English-only in the draft to avoid shipping imperfect Thai.
+  creator). Left English-only for now to avoid shipping imperfect Thai.
 
 ## Files
 - index.html — the whole site (self-contained, inline CSS).
