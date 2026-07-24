@@ -4,10 +4,27 @@
 A single-page media-kit / rate-card website for **Emily Srichala**, built as a
 favor for William to show her ("see if she likes it"). Same structure/typography
 as Jess's site (Fraunces + DM Sans + Noto Sans Thai) but a DISTINCT palette so
-it's her own brand, not a coral clone: **jade-green + warm-gold on warm ivory**
-(--coral=#15a07f primary, --coral-deep=#0c7a63, --peach=#e9b24b gold accent,
---dark=#10201b pine, --cream=#fbf9f3). NB: the CSS var names still say "coral"
-for minimal-diff reasons — only the values changed.
+it's her own brand, not a coral clone. William asked for a "cute / flattering"
+look: **soft lilac-orchid + blush/peach on a warm pink-white**
+(--coral=#b26fc9 primary, --coral-deep=#8a45ad plum, --peach=#f6a58a,
+--rose=#f7d5e8 blush, --dark=#2a1b30 deep plum, --cream=#fdf8fc). NB: the CSS
+var names still say "coral" for minimal-diff reasons; only the values changed.
+(History: was coral like Jess, then jade-green, now lilac/blush.)
+
+## Bilingual EN / ไทย toggle
+- Nav has an EN | ไทย pill toggle. Every translatable element carries
+  data-en + data-th attributes; a small inline script swaps innerHTML on click
+  and remembers the choice in localStorage. Numbers, prices, handles and email
+  stay as-is in both languages.
+- Deep-link a language with `?lang=th` (or `?lang=en`) so a Thai link can be
+  sent directly. Serif Thai headings fall back to Noto Sans Thai (Fraunces has
+  no Thai glyphs).
+- The Thai copy is a solid first pass but SHOULD BE PROOFED BY EMILY (she's the
+  ฝรั่งพูดไทย native-level creator). It's draft-safe to show her.
+
+## Copy voice
+- No em dashes anywhere (William's rule); no AI-sounding filler. Kept the copy
+  plain and human in both languages.
 
 ## Hosting (free, no domain yet)
 - GitHub repo: williamcoconut/emily-srichala (public)
@@ -39,8 +56,8 @@ for minimal-diff reasons — only the values changed.
   - The old about photo (a couple shot with her husband) was REMOVED at
     William's request; the about column is now a designed "Why brands work with
     me" value panel (.about-panel), no photo. about.jpg deleted from the repo.
-- Possible add: EN/TH language toggle (very on-brand — she's the "speaks Thai"
-  creator). Left English-only for now to avoid shipping imperfect Thai.
+- EN/TH toggle is now LIVE (see the bilingual section above). Very on-brand
+  since she's the "speaks Thai" creator.
 
 ## Files
 - index.html — the whole site (self-contained, inline CSS).
