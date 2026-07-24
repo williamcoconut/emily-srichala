@@ -11,10 +11,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --coral:#e8707a; --coral-deep:#d4525f; --coral-soft:#fdf0f1;
-    --peach:#ffb88a; --rose:#ffd9dd;
-    --dark:#141114; --ink:#1f1a1c; --gray:#6e6469;
-    --light:#faf6f4; --cream:#fdfaf7; --white:#fff;
+    --coral:#15a07f; --coral-deep:#0c7a63; --coral-soft:#e4f3ee;
+    --peach:#e9b24b; --rose:#f4dfb0;
+    --dark:#10201b; --ink:#17211d; --gray:#5f6b66;
+    --light:#eef6f2; --cream:#fbf9f3; --white:#fff;
     --serif:'Fraunces',serif; --sans:'DM Sans','Noto Sans Thai',sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -26,7 +26,7 @@
   .th{font-family:'Noto Sans Thai',var(--sans)}
 
   /* nav */
-  nav{position:sticky;top:0;z-index:50;background:rgba(253,250,247,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(20,17,20,.06)}
+  nav{position:sticky;top:0;z-index:50;background:rgba(251,249,243,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(20,17,20,.06)}
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
   .wordmark{font-family:var(--serif);font-weight:600;font-size:1.15rem;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
   .wordmark .dot{width:9px;height:9px;border-radius:50%;background:var(--coral)}
@@ -36,8 +36,8 @@
   /* hero */
   .hero{padding:76px 0 60px;position:relative;overflow:hidden}
   .hero .blob{position:absolute;border-radius:50%;pointer-events:none;filter:blur(6px)}
-  .hero .b1{width:420px;height:420px;background:radial-gradient(circle,rgba(232,112,122,.14),transparent 65%);top:-140px;right:-120px}
-  .hero .b2{width:340px;height:340px;background:radial-gradient(circle,rgba(255,184,138,.16),transparent 65%);bottom:-160px;left:-120px}
+  .hero .b1{width:420px;height:420px;background:radial-gradient(circle,rgba(21,160,127,.14),transparent 65%);top:-140px;right:-120px}
+  .hero .b2{width:340px;height:340px;background:radial-gradient(circle,rgba(233,178,75,.18),transparent 65%);bottom:-160px;left:-120px}
   .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--coral-deep);margin-bottom:22px}
   .eyebrow .line{width:26px;height:1px;background:var(--coral)}
@@ -54,7 +54,7 @@
 
   /* hero visual */
   .hero-visual{position:relative}
-  .portrait{aspect-ratio:4/5;border-radius:28px;background:linear-gradient(150deg,var(--coral) 0%,var(--peach) 100%);position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(212,82,95,.28)}
+  .portrait{aspect-ratio:4/5;border-radius:28px;background:linear-gradient(150deg,var(--coral) 0%,var(--peach) 100%);position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(12,122,99,.28)}
   .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .portrait .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,.9);gap:8px;text-align:center;padding:20px}
   .portrait .ph .ico{font-size:2rem}
@@ -67,7 +67,7 @@
 
   /* metrics bar */
   .metrics{background:var(--dark);color:#fff;padding:64px 0;margin-top:20px;position:relative;overflow:hidden}
-  .metrics::before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(232,112,122,.22),transparent 62%);top:-160px;right:-80px}
+  .metrics::before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(21,160,127,.24),transparent 62%);top:-160px;right:-80px}
   .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
   .metric{text-align:center;padding:8px}
   .metric .plat{font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;color:var(--rose);font-weight:700;margin-bottom:8px}
@@ -90,14 +90,18 @@
   .about-copy p b{color:var(--ink);font-weight:600}
   .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
   .badge{font-size:.76rem;font-weight:600;background:var(--coral-soft);color:var(--coral-deep);padding:7px 14px;border-radius:50px}
-  .about-visual{aspect-ratio:1/1;border-radius:24px;background:linear-gradient(150deg,#ffd9dd,#ffb88a);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
-  .about-visual img{width:100%;height:100%;object-fit:cover}
-  .about-visual .ph{color:rgba(20,17,20,.5);text-align:center;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  .about-panel{aspect-ratio:1/1;border-radius:24px;background:linear-gradient(155deg,var(--coral-deep) 0%,var(--dark) 100%);color:#fff;padding:44px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(12,122,99,.24)}
+  .about-panel::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(233,178,75,.30),transparent 62%);top:-100px;right:-80px;pointer-events:none}
+  .ap-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--rose);margin-bottom:26px;position:relative}
+  .ap-list{list-style:none;display:flex;flex-direction:column;gap:22px;position:relative}
+  .ap-list li{display:flex;flex-direction:column;gap:4px;padding-left:18px;border-left:2px solid rgba(244,223,176,.4)}
+  .ap-list li b{font-family:var(--serif);font-weight:500;font-size:1.4rem;letter-spacing:-.01em}
+  .ap-list li span{font-size:.86rem;color:rgba(255,255,255,.72);line-height:1.4}
 
   /* pillars */
   .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
   .pillar{background:var(--white);border:1px solid rgba(20,17,20,.07);border-radius:18px;padding:26px 20px;transition:transform .3s,box-shadow .3s}
-  .pillar:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(212,82,95,.12)}
+  .pillar:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(12,122,99,.14)}
   .pillar .ico{font-size:1.5rem;margin-bottom:12px}
   .pillar h3{font-size:1rem;font-weight:700;margin-bottom:6px}
   .pillar p{font-size:.85rem;color:var(--gray)}
@@ -105,7 +109,7 @@
   /* content strip (placeholder tiles) */
   .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
   .tile{aspect-ratio:16/9;border-radius:14px;overflow:hidden;display:block;position:relative;box-shadow:0 8px 22px rgba(20,17,20,.08);transition:transform .3s,box-shadow .3s}
-  .tile:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(212,82,95,.16)}
+  .tile:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(12,122,99,.18)}
   .tile img{width:100%;height:100%;object-fit:cover;display:block}
 
   /* rates */
@@ -114,7 +118,7 @@
   .rates-note{font-size:.8rem;color:var(--gray)}
   .rates-main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:22px}
   .rate-card{background:var(--white);border:1px solid rgba(20,17,20,.07);border-radius:20px;padding:28px 18px;text-align:center;transition:transform .3s,box-shadow .3s}
-  .rate-card:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(212,82,95,.14)}
+  .rate-card:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(12,122,99,.16)}
   .rate-card .ico{width:38px;height:38px;line-height:38px;border-radius:50%;background:var(--coral-soft);color:var(--coral-deep);font-weight:700;font-size:.82rem;margin:0 auto 14px}
   .rate-card .service{font-weight:700;font-size:.95rem;margin-bottom:4px}
   .rate-card .service-sub{font-size:.74rem;color:var(--gray);margin-bottom:16px;min-height:2.2em;line-height:1.35}
@@ -134,7 +138,7 @@
 
   /* contact */
   .contact{background:var(--dark);border-radius:32px;color:#fff;padding:64px 48px;text-align:center;position:relative;overflow:hidden}
-  .contact::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(232,112,122,.24),transparent 62%);top:-200px;left:-80px}
+  .contact::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(21,160,127,.26),transparent 62%);top:-200px;left:-80px}
   .contact h2{position:relative;color:#fff;margin-bottom:14px}
   .contact h2 em{color:var(--rose)}
   .contact p{position:relative;color:rgba(255,255,255,.72);max-width:32rem;margin:0 auto 26px}
@@ -222,7 +226,14 @@
         <span class="badge">TikTok Awards TH '25 nominee</span>
       </div>
     </div>
-    <div class="about-visual"><img src="images/about.jpg" alt="Emily Srichala with her husband on location in Thailand"></div>
+    <div class="about-panel">
+      <div class="ap-tag">Why brands work with me</div>
+      <ul class="ap-list">
+        <li><b>Bilingual reach</b><span>Thai and international audiences engaged in a single post.</span></li>
+        <li><b>Recommendations that convert</b><span>A community that books flights and tries the food I feature.</span></li>
+        <li><b>Native to every platform</b><span>Made-for-format across TikTok, Instagram, YouTube &amp; Facebook.</span></li>
+      </ul>
+    </div>
   </div>
 </section>
 

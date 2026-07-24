@@ -2,8 +2,12 @@
 
 ## What this is
 A single-page media-kit / rate-card website for **Emily Srichala**, built as a
-favor for William to show her ("see if she likes it"). Same visual language as
-Jess's site (jesszheng.co): Fraunces + DM Sans, coral #e8707a on cream.
+favor for William to show her ("see if she likes it"). Same structure/typography
+as Jess's site (Fraunces + DM Sans + Noto Sans Thai) but a DISTINCT palette so
+it's her own brand, not a coral clone: **jade-green + warm-gold on warm ivory**
+(--coral=#15a07f primary, --coral-deep=#0c7a63, --peach=#e9b24b gold accent,
+--dark=#10201b pine, --cream=#fbf9f3). NB: the CSS var names still say "coral"
+for minimal-diff reasons — only the values changed.
 
 ## Hosting (free, no domain yet)
 - GitHub repo: williamcoconut/emily-srichala (public)
@@ -28,11 +32,13 @@ Jess's site (jesszheng.co): Fraunces + DM Sans, coral #e8707a on cream.
   $5,500 · Bundle $8,000 (save $1,500) · IG Story set $800 · UGC/Whitelisting
   $2,500 · Spark code $1,500. Swap for her real rates after she sees it.
 - **Photos** are her REAL public images pulled online for the draft (William
-  OK'd this): hero = Thai-dress at Wat Arun (her YT avatar shoot); about =
-  on-location couple shot (Thailights press photo); content strip = 4 of her
-  actual YouTube video thumbnails (img.youtube.com/vi/<id>). For the final,
-  get her own higher-res/hand-picked shots. Files in images/ (hero.jpg,
-  about.jpg, content1-4.jpg).
+  OK'd this): hero = Thai-dress at Wat Arun (her YT avatar shoot); content strip
+  = 4 of her actual YouTube video thumbnails (img.youtube.com/vi/<id>). For the
+  final, get her own higher-res/hand-picked shots. Files in images/ (hero.jpg,
+  content1-4.jpg).
+  - The old about photo (a couple shot with her husband) was REMOVED at
+    William's request; the about column is now a designed "Why brands work with
+    me" value panel (.about-panel), no photo. about.jpg deleted from the repo.
 - Possible add: EN/TH language toggle (very on-brand — she's the "speaks Thai"
   creator). Left English-only for now to avoid shipping imperfect Thai.
 
